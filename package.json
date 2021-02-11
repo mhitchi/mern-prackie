@@ -1,0 +1,24 @@
+{
+  "name": "mern-prackie",
+  "version": "1.0.0",
+  "description": "speed chat app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently --kill-others \"heroku local\" \"npm run start --prefix ./client\"",
+    "postinstall": "npm install --prefix ./server && npm install --prefix ./client && npm run build --prefix ./client",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhitchi/mern-prackie.git"
+  },
+  "author": "May Hitchings",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mhitchi/mern-prackie/issues"
+  },
+  "homepage": "https://github.com/mhitchi/mern-prackie#readme",
+  "devDependencies": {
+    "concurrently": "^5.3.0"
+  }
+}
